@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Contenido Offline</title>
+
+<style>
+body{
+font-family:Arial;
+background:#f4f4f4;
+padding:20px;
+}
+
+.box{
+background:white;
+padding:20px;
+margin-bottom:15px;
+border-radius:12px;
+}
+
+button{
+background:#1f5f4a;
+color:white;
+border:none;
+padding:12px;
+border-radius:8px;
+cursor:pointer;
+}
+</style>
+
+<script>
+function descargar(tipo){
+alert(tipo + " descargado correctamente.");
+}
+</script>
+
+</head>
+<body>
+
+<h1>Contenido Offline</h1>
+
+<div class="box">
+<h3>Mapa de La Araucanía</h3>
+<button onclick="descargar('Mapa')">Descargar</button>
+</div>
+
+<div class="box">
+<h3>Rutas turísticas</h3>
+<button onclick="descargar('Ruta')">Descargar</button>
+</div>
+
+<div class="box">
+<h3>Guía del turista</h3>
+<button onclick="descargar('Guía')">Descargar</button>
+</div>
+
+<div class="box">
+<h3>Información de alojamientos</h3>
+<button onclick="descargar('Alojamientos')">Descargar</button>
+</div>
+
+</body>
+</html>
