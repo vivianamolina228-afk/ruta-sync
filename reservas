@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Reservas</title>
+
+<style>
+body{
+font-family:Arial;
+padding:20px;
+}
+
+input,select{
+width:100%;
+padding:10px;
+margin-bottom:15px;
+}
+
+button{
+background:#1f5f4a;
+color:white;
+padding:12px;
+border:none;
+width:100%;
+}
+</style>
+
+<script>
+
+let reservas = [];
+
+function reservar(){
+
+let fecha=document.getElementById("fecha").value;
+
+if(reservas.includes(fecha)){
+alert("Fecha ocupada. Seleccione otra.");
+return;
+}
+
+reservas.push(fecha);
+
+alert("Reserva confirmada.");
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h1>Nueva Reserva</h1>
+
+<select>
+<option>Cabaña Villarrica</option>
+<option>Refugio Curarrehue</option>
+<option>Lodge Malalcahuello</option>
+</select>
+
+<input type="date" id="fecha">
+
+<button onclick="reservar()">
+Confirmar Reserva
+</button>
+
+</body>
+</html>
