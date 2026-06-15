@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Planes</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#f4f4f4;
+padding:20px;
+}
+
+.plan{
+background:white;
+padding:20px;
+border-radius:15px;
+margin-bottom:20px;
+}
+
+button{
+background:#1f5f4a;
+color:white;
+padding:10px;
+border:none;
+width:100%;
+}
+</style>
+
+</head>
+<body>
+
+<h1>Planes para Alojamientos</h1>
+
+<div class="plan">
+<h2>Básico</h2>
+<p>$4.990 mensual</p>
+<ul>
+<li>Publicación</li>
+<li>Reservas</li>
+<li>Mensajes</li>
+</ul>
+<button>Elegir</button>
+</div>
+
+<div class="plan">
+<h2>Premium</h2>
+<p>$9.990 mensual</p>
+<ul>
+<li>Todo lo anterior</li>
+<li>Automatización</li>
+<li>Traducción automática</li>
+<li>Contenido Offline Avanzado</li>
+</ul>
+<button>Elegir</button>
+</div>
+
+<div class="plan">
+<h2>Comisión por Reserva</h2>
+<p>15% por reserva realizada.</p>
+</div>
+
+</body>
+</html>
