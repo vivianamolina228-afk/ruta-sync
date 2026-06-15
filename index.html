@@ -124,3 +124,32 @@ Explora La Araucanía
 
 </body>
 </html>
+<h2>Traductor</h2>
+
+<textarea id="texto"></textarea>
+
+<button onclick="traducir()">
+Traducir
+</button>
+
+<p id="resultado"></p>
+
+<script>
+
+function traducir(){
+
+let texto =
+document.getElementById("texto").value;
+
+if(texto.includes("hola")){
+document.getElementById("resultado").innerHTML =
+"hello";
+}
+else{
+document.getElementById("resultado").innerHTML =
+"traducción de ejemplo";
+}
+
+}
+
+</script>
